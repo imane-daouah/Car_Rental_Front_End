@@ -1,22 +1,36 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
-import { routes } from './app.routes';
-import { SignupComponent } from './auth/components/signup/signup.component';
-import { LoginComponent } from './auth/components/login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Import des modules NgZorro nécessaires
+import { NzSpinModule } from 'ng-zorro-antd/spin';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+
+import { ScrollingModule } from '@angular/cdk/scrolling';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SignupComponent,
-    LoginComponent,
+    // Vos composants ici
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes), // Import your routes here
+
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NzSpinModule,   // Pour nz-spin
+    NzFormModule,   // Pour nz-form-item et nz-form-control
+    NzInputModule,  // Pour nz-input
+    NzButtonModule,
+     // Pour le bouton
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [/* Composant principal ici */],
 })
 export class AppModule {}
