@@ -2,20 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-
-
-// Importez ou configurez vos routes ici
 import { routes } from './app.routes';
- // Si vos routes sont dans app.routes.ts
+import { SignupComponent } from './auth/components/signup/signup.component';
+import { LoginComponent } from './auth/components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-
+    SignupComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes), // Assurez-vous que vos routes sont correctement définies ici
+    RouterModule.forRoot(routes), // Import your routes here
   ],
   providers: [],
   bootstrap: [AppComponent],
