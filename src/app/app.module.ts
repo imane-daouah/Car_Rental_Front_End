@@ -1,24 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { SignupComponent } from './auth/components/signup/signup.component';
-import { LoginComponent } from './auth/components/login/login.component';
-import { routes } from './app.routes';
+
+// Importez ou configurez vos routes ici
+import { routes } from './app.routes'; // Si vos routes sont dans app.routes.ts
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignupComponent,
-    LoginComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
-    FormsModule,
+    RouterModule.forRoot(routes), // Assurez-vous que vos routes sont correctement définies ici
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
