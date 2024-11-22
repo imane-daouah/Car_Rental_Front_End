@@ -1,27 +1,24 @@
+// Locale Registration
+import { registerLocaleData } from '@angular/common';
+import en from '@angular/common/locales/en';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-// Components
-import { AppComponent } from './app.component';
-import { LoginComponent } from './auth/components/login/login.component';
-import { SignupComponent } from './auth/components/signup/signup.component';
-
-// Routing
 import { AppRoutingModule } from './app.routes';
 
-// NG ZORRO Imports
+// NG ZORRO IMPORTS
 import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 
-// Locale Registration
-import { registerLocaleData } from '@angular/common';
-import en from '@angular/common/locales/en';
+// Components
+import { AppComponent } from './app.component';
+import { LoginComponent } from './auth/components/login/login.component';
+import { SignupComponent } from './auth/components/signup/signup.component';
 
 registerLocaleData(en);
 
@@ -39,7 +36,7 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     ReactiveFormsModule,
 
-    // NG ZORRO Imports
+    // NG ZORRO IMPORTS
     NzSpinModule,
     NzFormModule,
     NzButtonModule,
@@ -47,8 +44,8 @@ registerLocaleData(en);
     NzLayoutModule,
   ],
   providers: [
-    { provide: 'NZ_I18N', useValue: 'en_US' }
+    { provide: NZ_I18N, useValue: en_US }
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

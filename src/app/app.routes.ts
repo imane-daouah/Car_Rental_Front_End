@@ -5,11 +5,12 @@ import { LoginComponent } from './auth/components/login/login.component';
 
 const routes: Routes = [
   { path: 'register', component: SignupComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' }, // Redirection par défaut vers login
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
