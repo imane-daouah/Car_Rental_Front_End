@@ -1,12 +1,17 @@
 <div class="main-header">
   <nav class="navbar">
+    <!-- Titre -->
     <div class="navbar-brand">
       <a routerLink="/" class="brand-logo">Car Rental Service</a>
     </div>
+
+    <!-- Liens -->
     <div class="navbar-links">
       <a routerLink="/register" routerLinkActive="active">Signup</a>
       <a routerLink="/login" routerLinkActive="active">Login</a>
     </div>
   </nav>
-  <router-outlet></router-outlet>
 </div>
+
+<!-- Contenu principal -->
+<router-outlet></router-outlet>
