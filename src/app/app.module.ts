@@ -10,13 +10,13 @@ import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 
-import { ScrollingModule } from '@angular/cdk/scrolling';
+
 
 
 
 @NgModule({
   declarations: [
-    // Vos composants ici
+   
   ],
   imports: [
     BrowserModule,

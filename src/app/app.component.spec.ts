@@ -10,6 +10,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'car_rental_angular';
+navigateToSignup: any;
+navigateToLogin: any;
 }
 
 

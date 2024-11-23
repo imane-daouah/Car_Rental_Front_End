@@ -1,5 +1,5 @@
 .main-header {
-  background-color: #6db3fe;
+  background-color: #7bb8f9;
   color: #000;
   padding: 10px;
 }
@@ -30,5 +30,29 @@
 
 .navbar-links a.active {
   font-weight: bold;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #020101;
+}
+.navbar-links {
+  display: flex;
+  gap: 15px; /* Espacement entre les boutons */
+}
+
+button {
+  background-color: #fdfefe; /* Couleur de fond bleue */
+  color: rgb(46, 27, 27); /* Texte en blanc */
+  border: none; /* Retirer les bordures */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px 20px; /* Espacement interne */
+  font-size: 16px; /* Taille du texte */
+  cursor: pointer; /* Curseur en forme de main */
+  transition: background-color 0.3s ease; /* Transition pour hover */
+}
+
+button:hover {
+  background-color: #ffbb8a; /* Couleur plus foncée au survol */
+}
+
+button:focus {
+  outline: none; /* Retirer les contours de focus */
+  box-shadow: 0 0 5px rgba(25, 30, 35, 0.5); /* Ombre légère pour focus */
 }
